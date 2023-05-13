@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing:border-box;
+			font-family: 'Baloo Bhai 2', cursive;
+		}
+		.container{
+			width: 100%;
+			height: 100vh;
+			background: #f0fff3;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.coupon-card{
+			background: linear-gradient(135deg, #7158fe, #9d4de6);
+			color: white;
+			text-align: center;
+			padding: 40px 80px;
+			border-radius: 17px;
+			box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
+			position: relative;
+		}
+		.coupon-card h3{
+			font-size: 28px;
+			font-weight: 400;
+			line-height: 40px;
+		}
+		.coupon-card p{
+			font-size: 15px;
+
+		}
+		.coupon-row{
+			align-items: center;
+			margin: 25px auto;
+			width: fit-content;
+			display: flex;
+		}
+		#cpncode{
+			border:1px solid white;
+			padding: 10px 20px;
+			border-right: 0;
+			border-radius: 3px 0px 0px 3px ;
+			
+
+
+		}
+		.coupon-card img{
+			height: 100px;
+			width: 100px;
+			border-radius: 28px;
+
+		}
+		#cpnbtn{
+			border:1px solid #fff;
+			background: #fff;
+			padding: 10px 20px;
+			color: #7158fe;
+			border-radius: 0px 3px 3px 0px ;
+			cursor: pointer;
+
+		}
+		.circle-1,.circle-2{
+			border-radius: 50%;
+			background: #f0fff3;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+
+		}
+		.circle-1{
+			left: -25px;
+
+		}
+		.circle-2{
+			right:  -25px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class=" coupon-card">
+			<img src="https://play-lh.googleusercontent.com/AQtSF5Sl18yp3mQ2tcbOrBLekb7cyP3kyg5BB1uUuc55zfcnbkCDLHFTBwZfYiu1aDI">
+			<h3>20% flat off on all rides within the city  <br>using HDFC Credit Card</h3>
+			<div class="coupon-row">
+				<span id="cpncode">TONYSTARK</span>
+				<span id="cpnbtn">COPYCODE</span>
+
+			</div>
+			<p>Valid Till: 20 Dec, 2021</p>
+			<div class="circle-1"></div>
+			<div class="circle-2"></div>
+		</div>
+		
+	</div>
+
+</body>
+</html>
